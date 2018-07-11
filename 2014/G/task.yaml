@@ -1,0 +1,10 @@
+name: "G"
+title: "THE PERFECT CHOCOLATE CANDY"
+time_limit: 10
+memory_limit: 256
+n_input: 1
+public_testcases: all
+score_mode: max
+infile: ""
+outfile: ""
+token_mode: infinite

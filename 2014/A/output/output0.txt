@@ -1,0 +1,30 @@
+Case #1: Not acceptable
+Case #2: Not acceptable
+Case #3: Not acceptable
+Case #4: Not acceptable
+Case #5: Not acceptable
+Case #6: Not acceptable
+Case #7: Acceptable
+Case #8: Acceptable
+Case #9: Acceptable
+Case #10: Not acceptable
+Case #11: Not acceptable
+Case #12: Acceptable
+Case #13: Acceptable
+Case #14: Not acceptable
+Case #15: Not acceptable
+Case #16: Acceptable
+Case #17: Acceptable
+Case #18: Not acceptable
+Case #19: Not acceptable
+Case #20: Acceptable
+Case #21: Not acceptable
+Case #22: Acceptable
+Case #23: Not acceptable
+Case #24: Acceptable
+Case #25: Acceptable
+Case #26: Not acceptable
+Case #27: Not acceptable
+Case #28: Not acceptable
+Case #29: Not acceptable
+Case #30: Acceptable

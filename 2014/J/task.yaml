@@ -1,0 +1,10 @@
+name: "J"
+title: "NUMBER SYSTEM"
+time_limit: 5
+memory_limit: 256
+n_input: 1
+public_testcases: all
+score_mode: max
+infile: ""
+outfile: ""
+token_mode: infinite
