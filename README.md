@@ -8,7 +8,7 @@ git clone https://github.com/limyunkai19/Malaysia-National-ACM-ICPC.git
 
 ## Setting up CMS
 ### Install CMS
-On **Ubuntu 16.04** with **CMS 1.3**. Summary of [documentation](https://cms.readthedocs.io/en/v1.3/Installation.html).
+On **Ubuntu 16.04 LTS** with **CMS 1.3**. Summary of [documentation](https://cms.readthedocs.io/en/v1.3/Installation.html).
 
 ```bash
 # dependencies
@@ -19,7 +19,7 @@ sudo apt-get install -y python-dev libpq-dev libcups2-dev libyaml-dev \
     libffi-dev python-pip
 sudo apt-get install -y nginx-full php7.0-cli php7.0-fpm phppgadmin \
     texlive-latex-base a2ps gcj-jdk haskell-platform
-sudo apt-get install virtualenv
+sudo apt-get install -y virtualenv
 
 # if nginx installation fail, you might need to stop and disable apache service
 sudo systemctl stop apache2.service
