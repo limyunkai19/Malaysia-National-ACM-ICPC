@@ -1,0 +1,35 @@
+server {
+    listen 80;
+    listen [::]:80;
+    server_name contest.cms.your_domain.com;
+
+    location / {
+        include proxy_params;
+        proxy_pass http://localhost:8888;
+    }
+
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name admin.cms.your_domain.com;
+
+    location / {
+        include proxy_params;
+        proxy_pass http://localhost:8889;
+    }
+
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name ranking.cms.your_domain.com;
+
+    location / {
+        include proxy_params;
+        proxy_pass http://localhost:8890;
+    }
+
+}

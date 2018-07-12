@@ -1,0 +1,7 @@
+# block raw ip access and others
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name _;
+    return 444;
+}
