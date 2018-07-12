@@ -1,0 +1,10 @@
+name: "B"
+title: "CHEAP DELIVERIES"
+time_limit: 2
+memory_limit: 64
+n_input: 8
+public_testcases: all
+score_mode: max
+infile: ""
+outfile: ""
+token_mode: infinite

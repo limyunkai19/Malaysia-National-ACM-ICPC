@@ -1,0 +1,19 @@
+name: "Malaysia-ACM-ICPC-2018"
+description: "Mock contest of ACM ICPC Malaysia al-Khawarizmi National Programming Contest 2018"
+tasks:
+  - "A"
+  - "B"
+  - "C"
+  - "D"
+  - "E"
+  - "F"
+  - "G"
+  - "H"
+  - "I"
+  - "J"
+
+users:
+  - username: "Admin"
+    password: "Admin"
+    ip: null
+token_mode: disabled
