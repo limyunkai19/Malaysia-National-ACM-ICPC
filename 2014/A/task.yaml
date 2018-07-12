@@ -3,7 +3,7 @@ title: "KEEP IT SECRET & SAFE"
 time_limit: 10
 memory_limit: 256
 n_input: 1
-public_testcases: add
+public_testcases: all
 score_mode: max
 infile: ""
 outfile: ""
