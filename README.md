@@ -120,7 +120,8 @@ python users_add.py users.txt
 ## Run Contest
 ```bash
 cmsLogService 0 &
-cmsRankingWebServer --drop &
+cmsRankingWebServer --drop
+cmsRankingWebServer &
 cmsResourceService -a
 
 # remember to switch the job to bg, then disown before logout
