@@ -130,5 +130,5 @@ exit
 ```
 
 ## To Do
-- [ ] use symlink to reduce the file size
-- [ ] research open pdf in new tab
+- [x] use symlink to reduce the file size
+- [ ] research open pdf in new tab. https://github.com/cms-dev/cms/issues/859
