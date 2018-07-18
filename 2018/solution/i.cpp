@@ -1,9 +1,11 @@
+// O(NF^2) = O(n^3) dp where n <= 500
+
 #include <iostream>
 
 using namespace std;
 
-int factory, layer, ball[600];
-int dist[600][600], recycle[600][600], produce[600][600];
+int factory, layer, layers[600];
+long long dist[600][600], recycle[600][600], produce[600][600];
 long long dp_recycle[600][600], dp_produce[600][600]; // dp[layer][ball at which factory]
 
 int main(){
@@ -13,51 +15,50 @@ int main(){
         for(int j = 0; j < factory; j++)
             cin >> dist[i][j];
 
-        for(int j = 0; j < layer; j++)
+        for(int j = 0; j < layer; j++){
             cin >> produce[i][j];
+            if(produce[i][j] == -1)
+                produce[i][j] = 1LL<<50;
+        }
 
-        for(int j = 0; j < layer; j++)
+        for(int j = 0; j < layer; j++){
             cin >> recycle[i][j];
+            if(recycle[i][j] == -1)
+                recycle[i][j] = 1LL<<50;
+        }
+
     }
 
     int n;
     cin >> n;
     for(int i = 0; i < n; i++){
-        cin >> ball[i];
-        ball[i]--;
+        cin >> layers[i];
+        layers[i]--;
     }
 
     // base case
     for(int i = 0; i < factory; i++){
         // produce
-        if(produce[i][ball[0]] != -1)
-            dp_produce[0][i] = produce[i][ball[0]];
-        else
-            dp_produce[0][i] = 1LL<<50;
+        dp_produce[0][i] = produce[i][layers[0]];
 
         // recycle
-        if(recycle[i][ball[n-1]] != -1)
-            dp_recycle[0][i] = recycle[i][ball[n-1]];
-        else
-            dp_recycle[0][i] = 1LL<<50;
+        dp_recycle[0][i] = recycle[i][layers[n-1]];
     }
 
     // recurrence relation
-    for(int i = 1; i < n; i++){
+    for(int l = 1; l < n; l++){
         for(int f = 0; f < factory; f++){
             // produce
-            dp_produce[i][f] = 1LL<<50;
-            if(produce[f][ball[i]] != -1)
-                for(int pre_f = 0; pre_f < factory; pre_f++)
-                    dp_produce[i][f] = min(dp_produce[i][f],
-                                dist[pre_f][f]+produce[f][ball[i]]+dp_produce[i-1][pre_f]);
+            dp_produce[l][f] = 1LL<<50;
+            for(int i = 0; i < factory; i++)
+                dp_produce[l][f] = min(dp_produce[l][f],
+                        dist[i][f]+produce[f][layers[l]]+dp_produce[l-1][i]);
 
             // recycle
-            dp_recycle[i][f] = 1LL<<50;
-            if(recycle[f][ball[n-i-1]] != -1)
-                for(int pre_f = 0; pre_f < factory; pre_f++)
-                    dp_recycle[i][f] = min(dp_recycle[i][f],
-                                dist[pre_f][f]+recycle[f][ball[n-i-1]]+dp_recycle[i-1][pre_f]);
+            dp_recycle[l][f] = 1LL<<50;
+            for(int i = 0; i < factory; i++)
+                dp_recycle[l][f] = min(dp_recycle[l][f],
+                        dist[i][f]+recycle[f][layers[n-l-1]]+dp_recycle[l-1][i]);
         }
     }
 
