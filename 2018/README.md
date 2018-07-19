@@ -24,22 +24,22 @@ Scoreboard. [Link](https://github.com/limyunkai19/Malaysia-National-ACM-ICPC/fil
 | Problem | Type | Difficulty |
 | ------- | ---- | ---------- |
 | A - Aku Negaraku | Ad-Hoc - Simulation| Easy |
-| B - Cheap Deliveries Very | Graph - TSP with DP | Hard |
-| C - Eli’s Curious Mind | Dynamic Programming | Medium |
+| B - Cheap Deliveries | Graph - TSP with DP | Hard |
+| C - Eli’s Curious Mind | Dynamic Programming | Medium-Hard |
 | D - Explorace | Graph - Direct MST | Medium |
-| E - Matrix Multiplication Calculator | Ad-Hoc - Simulation | Easy |
+| E - Matrix Multiplication Calculator | Ad-Hoc - Implementation | Easy |
 | F - Sum of Sub Rectangle Areas | Math - Combinatorics + Algebra  | Very Hard |
-| G - Wak Sani Satay | Ad-Hoc - Implementation | Easy |
-| H - Stroop Effect | Ad-Hoc - Understanding and Implementation | Medium |
+| G - Wak Sani Satay | Ad-Hoc - Understanding Problem | Easy |
+| H - Stroop Effect | Ad-Hoc - Understanding Problem | Medium |
 | I - Super Ball | Dynamic Programming | Hard |
-| J - Virus Outbreak | Identify the Pattern - Fibonacci | Medium |
+| J - Virus Outbreak | Identify the Pattern - Fibonacci | Easy-Medium |
 
 </p></details>
 
 ## Solutions
 **Codes:** [here](https://github.com/limyunkai19/Malaysia-National-ACM-ICPC/tree/master/2018/solution)
 
-**Writeup:** [pending]()
+**Writeup:** [here](https://limyunkai.com/malaysia-acm-icpc-2018-solution-writeup/)
 
 ## Scoreboard
 ![scoreboard](https://user-images.githubusercontent.com/12468402/42795471-153e2a3e-89b7-11e8-8275-c8847ab09b2a.jpg)
