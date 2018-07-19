@@ -1,6 +1,9 @@
 # Malaysia National ACM ICPC
 An archive of ACM-ICPC Malaysia National al-Khawarizmi Programming Contest in the format of CMS Contest.
 
+
+# CMS Setup Guide
+
 ## Clone This Repository
 ```bash
 git clone https://github.com/limyunkai19/Malaysia-National-ACM-ICPC.git
